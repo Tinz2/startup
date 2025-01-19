@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="สำรวจโซลูชัน POS ขั้นสูงจาก IT Evo ระบบที่น่าเชื่อถือ มีประสิทธิภาพ และปรับแต่งได้สำหรับธุรกิจสมัยใหม่">
+    <meta name="keywords" content="ระบบ POS, IT Evo, โซลูชัน POS, การเพิ่มประสิทธิภาพธุรกิจ">
+    <meta name="author" content="IT Evo">
+    <title>IT Evo - ปฏิวัติระบบ POS สำหรับธุรกิจ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 0, 0, 0.8)), url('img/hero-bg.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 150px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .hero .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+        }
+        .product-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card img:hover {
+            transform: scale(1.1);
+        }
+        .product-card .card-title {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        .parallax {
+            background: url('img/parallax-bg.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            z-index: 1;
+            background-attachment: fixed;
+        }
+        .parallax::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 0;
+        }
+        footer a {
+            color: #f8a502;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .faq {
+            background: #f9f9f9;
+            padding: 50px 20px;
+        }
+        .faq h3 {
+            font-weight: bold;
+            color: #222;
+        }
+        .faq .accordion-button {
+            font-weight: 600;
+            color: #222;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>ปฏิวัติธุรกิจของคุณด้วย IT Evo POS</h1>
+    <p>ระบบ POS ที่ไร้รอยต่อ มีประสิทธิภาพ และปรับขนาดได้ตามความต้องการของคุณ</p>
+    <a href="#products" class="btn btn-primary">สำรวจโซลูชันของเรา</a>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Product Section -->
+<section id="products" class="py-5">
+  <div class="container text-center">
+      <h2 class="mb-4">ผลิตภัณฑ์ของเรา</h2>
+      <p class="lead mb-5">สำรวจระบบ POS ที่ออกแบบมาเพื่อพัฒนาธุรกิจของคุณ</p>
+      <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+              <div class="card product-card h-100 shadow">
+                  <img src="./img/pos.jpg" class="card-img-top" alt="POS รุ่นมาตรฐาน">
+                  <div class="card-body">
+                      <h5 class="card-title">POS รุ่นมาตรฐาน</h5>
+                      <p class="card-text">เหมาะสำหรับร้านค้าขนาดเล็กที่ต้องการโซลูชันที่มีประสิทธิภาพและคุ้มค่า</p>
+                      <a href="#" class="btn btn-primary">เรียนรู้เพิ่มเติม</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-4">
+              <div class="card product-card h-100 shadow">
+                  <img src="./img/pos.jpg" class="card-img-top" alt="POS รุ่นพรีเมียม">
+                  <div class="card-body">
+                      <h5 class="card-title">POS รุ่นพรีเมียม</h5>
+                      <p class="card-text">ฟีเจอร์ขั้นสูงสำหรับธุรกิจที่ต้องการประสิทธิภาพสูงสุด <br>ตามที่เราได้มอบให้</p>
+                      <a href="#" class="btn btn-primary">เรียนรู้เพิ่มเติม</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-4">
+              <div class="card product-card h-100 shadow">
+                  <img src="./img/pos.jpg" class="card-img-top" alt="POS รุ่นปรับแต่ง">
+                  <div class="card-body">
+                      <h5 class="card-title">POS รุ่นปรับแต่ง</h5>
+                      <p class="card-text">โซลูชันที่ปรับแต่งได้เพื่อตอบโจทย์ความต้องการเฉพาะของธุรกิจคุณ</p>
+                      <a href="#" class="btn btn-primary">เรียนรู้เพิ่มเติม</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="py-5 fade-in">
+    <div class="container text-center">
+        <h2>ทำไมต้องเลือก IT Evo?</h2>
+        <p class="lead">ที่ IT Evo เราผสานนวัตกรรมและความน่าเชื่อถือเพื่อมอบโซลูชัน POS ที่ไม่มีใครเทียบได้ ตั้งแต่การค้าปลีกถึงการบริการ เราพร้อมพัฒนาระบบของคุณให้ดีที่สุด</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <i class="fas fa-cogs fa-3x text-primary"></i>
+                <h5 class="mt-3">เทคโนโลยีที่ทันสมัย</h5>
+                <p>ระบบของเราพัฒนาโดยใช้เทคโนโลยีล่าสุดเพื่อประสิทธิภาพสูงสุด</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-users fa-3x text-primary"></i>
+                <h5 class="mt-3">ออกแบบเพื่อผู้ใช้</h5>
+                <p>อินเทอร์เฟซที่ใช้งานง่ายเพื่อทำให้การดำเนินงานของคุณสะดวกและง่ายขึ้น</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-lock fa-3x text-primary"></i>
+                <h5 class="mt-3">ความปลอดภัยของข้อมูล</h5>
+                <p>ปกป้องธุรกิจของคุณด้วยระบบการจัดการข้อมูลที่มั่นคงและปลอดภัย</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2025 IT Evo. สงวนลิขสิทธิ์ <a href="#">นโยบายความเป็นส่วนตัว</a> | <a href="#">ข้อกำหนดการใช้งาน</a></p>
+        <p>ติดตามเราได้ที่: 
+          <a href="https://www.facebook.com/profile.php?id=61572043137349" class="me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.lemon8-app.com/@itevo07?region=th&pid=website_seo_share" class="me-2"><i class="fa-solid fa-lemon"></i></a>
+          <a href="https://www.tiktok.com/@itevo07?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+      </p>
+      
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const faders = document.querySelectorAll('.fade-in');
+        const options = {
+            threshold: 0.5
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+        faders.forEach(fader => observer.observe(fader));
+    });
+</script>
+</body>
+</html>
